@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde: #00E676;
+    --verdeForteAntigo: #16B18F;
+    --verdeForte: #00BFA6;
+    --verdeFraco:  #00E6B1;
+    --pretoCinza: #212121;
+    --cinzaFraco: #616161;
+    --hoverButton: #EEEEEE;
+    --white: #ffffff;
+    --bordaVerde:  #00E676;
+}
+
+.borda_generica {
+    border: 2px solid var(--verdeForte);
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial,sans-serif;
+    background-color: #E4E8EE;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    /* as duas últimas propriedades são para deixar a font 
+    "menos pixalizada", ou seja, mais atraente
+    O "!importante serve para sobrescrever qualquer outra propriedade
+    no documento todo. Assim se tiver dois, este será prioridade*/
+  /*   background-color: #121923; */
+    background-color: var(--white);
+}
+
+input {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial,sans-serif;
+    color: var(--pretoCinza);
+    font-weight: 500;
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+
+}
+
+main div.agendamento-informacoes {
+    width: 68%;
+    padding: 30px 0px;
+}
+
+main h1 {
+    color: var(--cinzaFraco);
+    border-radius: 10px;
+}
+
+main span {
+    color: var(--cinzaFraco);
+}
+
+main div.agendamento-informacoes div.informacao {
+    width: 100%;
+    text-align: center;
+}
+
+main div.agendamento-informacoes div.informacoes {
+    width: 100%;
+} 
+
+main div.detalhes.content {
+    width: 90%;
+}
+
+main div.detalhes div.detalhes-pessoais { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    background-color: var(--white);
+}
+
+main div.detalhes div.detalhes-pessoais div.detalhe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 7px;
+}
+
+main div.detalhes div.detalhes-pessoais div.detalhe label {
+    padding-bottom: 2px ;
+    font-weight: bold;
+    color: var(--cinzaFraco);
+}
+
+main div.detalhes div.detalhes-pessoais div.detalhe input {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid var(--verdeForte);
+    font-size: 14px;
+}
+
+main div.detalhes div.detalhes-pessoais div.detalhe select {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid var(--verdeForte);
+    font-size: 14px;
+}
+
+main div.detalhes div.detalhes-pessoais div.detalhe select option {
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+/* Estilizando a frequência */
+main div.agendamento-informacoes div.informacoes div.frequencia.content { 
+    width: 100%;
+}
+
+main div.agendamento-informacoes div.informacoes div.frequencia {
+    width: 100%;
+    padding: 0px 7px;
+    margin-bottom: 20px;
+}
+
+main div.agendamento-informacoes div.informacoes div.frequencia div.frequencias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+main div.agendamento-informacoes div.informacoes div.frequencia div.frequencias label{
+    cursor: pointer;
+    padding: 16px 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--verdeForte);
+    text-align: center;
+}
+
+main div.agendamento-informacoes div.informacoes div.frequencia span {
+    margin: 10px 0px;
+    color: var(--cinzaFraco);
+}
+
+main div.agendamento-informacoes div.informacoes div.frequencia h1 {
+    margin: 5px 0px;
+}
+
+
+main div.agendamento-informacoes div.informacoes div.frequencia div.frequencias label input[type="checkbox"]:checked{
+    background-color: red;
+}
+
+/* main div.agendamento-informacoes div.informacoes div.frequencia label:hover{
+    color: var(--white);
+    background-color: red;
+} */
+
+/* Estilizando o horário */
+
+main div.agendamento-informacoes div.informacoes div.horario {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px 7px;
+}
+
+main div.agendamento-informacoes div.informacoes div.horario div.data-horario {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+main div.agendamento-informacoes div.informacoes div.horario div.data-horario input {
+    width: 49%;
+    height: 100%;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid var(--verdeForte);
+}
+
+
+main div.agendamento-informacoes div.informacoes div.horario select {
+    width: 49%;
+    height: 100%;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid var(--verdeForte);
+}
+
+/* Estilizando a oberservação do cliente */
+
+main div.agendamento-informacoes div.informacoes div.observacao {
+    width: 100%;
+    padding: 0px 7px;
+}
+
+main div.agendamento-informacoes div.informacoes div.observacao div.instrucoes {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+main div.agendamento-informacoes div.informacoes div.observacao div.instrucoes #instrucao {
+    width: 95%;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid var(--verdeForte);
+}
+
+
+/* Estilizando botão próximo */
+main div.informacoes div#botao-proximo {
+    text-align: center;
+}
+
+main div.informacoes div#botao-proximo button {
+    width: 50%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-weight:bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--verdeForte);
+}
+
+main div.informacoes div#botao-proximo button:hover {
+    transition: .2s ease;
+    background-color: var(--verdeFraco);
+}
+
+/* Estilizando o residencial */
+main div.residencial {
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.25);
+    background-color: var(--white);
+}
+
+main div.residencial img{
+    width: 200px;
+    height: 200px;
+}

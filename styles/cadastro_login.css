@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde: #00E676;
+    --verdeForteAntigo: #16B18F;
+    --verdeForte: #00BFA6;
+    --verdeFraco:  #00E6B1;
+    --pretoCinza: #212121;
+    --cinzaFraco: #616161;
+    --hoverButton: #EEEEEE;
+    --white: #ffffff;
+    --bordaVerde:  #00E676;
+}
+input {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial,sans-serif;
+    color: var(--pretoCinza);
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial,sans-serif;
+    background-color: #E4E8EE;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    /* as duas últimas propriedades são para deixar a font 
+    "menos pixalizada", ou seja, mais atraente
+    O "!importante serve para sobrescrever qualquer outra propriedade
+    no documento todo. Assim se tiver dois, este será prioridade*/
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* #00E676 */
+
+/* Estilizando login */
+
+main {
+    width: 100%;
+}
+
+main div.login {
+    width: 300px;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+main div.login div.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main div.login div.logo h3 {
+    color: var(--pretoCinza);
+}
+
+main div.login span {
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--cinzaFraco);
+}
+
+main div.login div.login-date {
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+}
+
+main div.login div.login-date label {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--cinzaFraco);
+}
+main div.login div.login-date div.icon-input {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    border: 1px solid var(--verdeForte);
+    /* border: 1px solid #CFD8DC; */
+    border-radius: 7px;
+    transition: 0.2s ease;
+}
+
+main div.login div.login-date div.icon-input:hover {
+    padding-left: 10px;
+}
+
+main div.login div.login-date div.icon-input i {
+    width: 14px;
+    height: 14px;
+    color: var(--verdeForte);
+}
+
+main div.login div.login-date input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin-left: 1.5%;
+    border-radius: 5px;
+    background: none;
+    padding-left: 5px;
+}
+
+main div.login span#esqueceu-senha {
+    color: var(--cinzaFraco);
+    cursor: pointer;
+}
+/* OBS: Esse trecho abaixo serve para remover as setas do input type number */
+/* Chrome, Safari, Edge, Opera */
+main div.login div.login-date input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+main div.login div.login-date input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Finalizando a retirada das setas do input */
+
+/* Estilizando o esqueceu senha */
+
+main div.login span#esqueceu-senha {
+    width: 90%;
+    text-align: end;
+}
+
+/* Estilizando o button */
+
+main button {
+    width: 90%;
+    height: 45px;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--verdeForte);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+main button:hover {
+    transition: 0.2s ease;
+    background-color: var(--verdeFraco);
+}
+
+main span.faca-login strong a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verdeForte);
+}
+
+
+main div.login span#faca-login strong a{
+    text-decoration: none;
+    color: var(--verdeForte);
+}

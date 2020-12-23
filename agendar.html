@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/agendar.css">
+    <link rel="stylesheet" href="styles/agendar_reponsive.css">
+    <title>Contratar</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="content">
+            <nav>
+                <div>
+                    <a href="index.html">LogoLimpa+</a><!-- Este deve ficar no início -->
+                </div>
+                <ul>
+                    <li><a>Tutorial</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a>Ajuda</a></li>
+                    <li><a href="agendar.html">Contratar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="agendamento-informacoes borda_generica">
+            <div class="informacao">
+                <h1>Alguns detalhes</h1>
+                <span>Preencha essas informações, por gentileza</span>
+            </div>
+            <div class="informacoes">
+                 <div class="detalhes">
+                    <div class="detalhes-pessoais">
+                        <div class="detalhe">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" required name="rua" placeholder="Exemplo: Três Riachos">
+                        </div>
+                        <div class="detalhe">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="Exemplo: borgeskaiser@gmail.com">
+                        </div>
+                        <div class="detalhe">
+                            <label for="numero">Número</label>
+                            <input type="number" id="numero" name="numero" placeholder="Exemplo: 13">
+                        </div>
+                        <div class="detalhe">
+                            <label for="local">Tipo</label>
+                            <select name="tiposLimpezas" id="local">
+                                <option value="capinagem">Capinagem</option>
+                                <option value="rocagem">Roçagem</option>
+                                <option value="jardinagem">Jardinagem</option>
+                                <option value="areasVerdes">Limpar áreas verdes</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frequência -->
+                <div class="frequencia content ">
+                    <h1>Frequência</h1>
+                    <span>Escolha a frequência do serviço</span>
+                    <div class="frequencias">
+                        
+                        <label for="check">
+                            <input type="radio" id="check">
+                            1 mês
+                        </label> 
+                        
+                        <label for="check">
+                            <input type="radio" id="check">
+                            1 mês
+                        </label> 
+                        
+                        <label for="check">
+                            <input type="radio" id="check">
+                            1 mês
+                        </label> 
+                      
+                        <span>Você receberá serviço<strong>a cada 1 mês</strong></span>
+                    </div>
+                </div>
+
+                <!-- horário -->
+                <div class="horario content ">
+                    <h1>Data e horário de início</h1>
+                    <div class="data-horario">
+                        <input type="date"/>
+                        <select name="tiposLimpezas" id="local">
+                            <option value="8">08:00</option>
+                            <option value="9">09:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="observacao content ">
+                    <h1>Observações</h1>
+                    <div class="instrucoes">
+                        <textarea name="" id="instrucao" cols="30" rows="10" placeholder="Exemplo: Cuidado com as plantas"></textarea>
+                    </div>
+                </div>
+                <!-- botão próximo -->
+                <div id="botao-proximo">
+                   <a href="login.html"><button>Próximo</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="residencial">
+            <img src="images/body.svg" alt="">
+            <span>Falta pouco para terminar o agendamento...</span>
+        </div>
+        
+    </main>
+</body>
+</html>

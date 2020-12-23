@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde: #00E676;
+    --verdeForteAntigo: #16B18F;
+    --verdeForte: #00BFA6;
+    --verdeFraco:  #00E6B1;
+    --pretoCinza: #212121;
+    --cinzaFraco: #616161;
+    --hoverButton: #EEEEEE;
+    --white: #ffffff;
+    --bordaVerde:  #00E676;
+}
+
+.borda_generica {
+    border: 2px solid var(--verdeForte);
+}
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial,sans-serif;
+    background-color: #E4E8EE;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    /* as duas últimas propriedades são para deixar a font 
+    "menos pixalizada", ou seja, mais atraente
+    O "!importante serve para sobrescrever qualquer outra propriedade
+    no documento todo. Assim se tiver dois, este será prioridade*/
+    background-color: var(--pretoCinza);
+}
+
+/* estilizando o header */
+header {
+    max-width: 1100;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 10px 3px 7px rgba(0, 0, 0, 0.1);
+    background-color: var(--verdeForte);
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {/* dando tamanho aos lis do nav */
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li:hover { /* color ao passar o mouse e mostrando ponteiro */
+    transition: 0.3s ease;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+header nav ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul li:hover a {
+    color: var(--pretoCinza);
+}
+
+header nav ul li:last-child{ /* trabalhando com o itemcontratar */
+    background-color: var(--white);
+    /* background-color: #04D361;  Guarde esta cor*/
+}
+header nav ul li:last-child:hover{ /* trabalhando com o itemcontratar */
+    background-color: var(--verdeFraco);
+    transition: 0.2s ease;
+    
+}
+
+header nav ul li:last-child:hover a {
+    color: var(--white);
+}
+
+header nav a, nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+header nav a, nav ul li:last-child a{
+    color: var(--pretoCinza);
+}
+/* Estilizando o banner e a descrição */
+
+section.banner_dicas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/* Estilizando o banner */
+
+section div.banner {
+    position: relative;
+    width: 73%;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00BFA6;
+    border-radius: 20px;
+}
+
+section div.banner.content {
+    max-width: 1200px;
+}
+
+section div.banner .descricao{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section div.banner div.descricao h1 {
+    font-size: max(25px, 2vw);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--white);
+}
+
+section div.banner div.descricao i {
+    color: var(--pretoCinza);
+}
+
+section div.banner div.descricao h2 {
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+section div.banner div button {
+    margin-top: 20px;
+    padding: 16px 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: black;
+    background-color: #fff;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+section div.banner div button:hover{
+    background-color: var(--hoverButton);
+}
+
+/* estilizando dicas */
+
+section.banner_dicas div.dicas {
+    width: 25%;
+    height: 380px;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+section.banner_dicas div.dicas h3{
+    color: var(--white);
+}
+section.banner_dicas div.dicas ul {
+    list-style-type: none;
+}
+
+section.banner_dicas div.dicas ul li {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    background-color: var(--white);
+}
+
+section.banner_dicas div.dicas ul li h5 {
+    margin-bottom: 5px;
+}
+
+section div.banner div.dicas h3{
+    height: 380px;
+}
+
+/* estilizando a seção de motivos */
+div.motivation {
+    text-align: center;
+    background-color: var(--white);
+    margin-bottom: 20px;
+    padding-bottom: 2%;
+    border-radius: 20px;
+}
+
+div.motivation.content {
+    max-width: 1200px;
+}
+
+div.motivation h1 {
+    padding: 20px 0px;
+    color: var(--cinzaFraco);
+}
+
+div.itens-motivations ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.itens-motivations ul li {
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 32px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+div.itens-motivations ul li span{
+    padding-top: 20px;
+}
+div.itens-motivations img{
+    width: 97px;
+    height: 100px;
+}
+
+/* estilizando a seção de preços */
+
+div.prices {
+    background-color: var(--white);
+    padding-bottom: 2rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+div.prices.content {
+    max-width: 1200px;
+}
+
+div.prices h1 {
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--cinzaFraco);
+}
+
+div.prices section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.prices section ul li {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+div.prices section ul li h3 {
+    font-weight: bold;
+    padding: 10px 0px;
+    color: var(--verdeForte);
+}
+
+div.prices section ul li span {
+    margin: 15px 0px;
+    color: var(--pretoCinza);
+}
+
+div.prices section div.price {
+    display: flex;
+    align-items: center;
+}
+
+div.prices section div.price h3 {
+    font-size: max(30px, 4vw);
+    color: var(--cinzaFraco);
+}
+
+div.prices section ul li span a {
+    text-decoration: none;
+}
+
+div.prices section button {
+    padding: 15px 30px; 
+    background-color: var(--verdeForte);
+    color: var(--white);
+    border-radius: 5px;
+    border: none; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+div.prices section button:hover {
+    background-color: var(--verdeFraco);
+}
+
+/* Estilizando a seção de preços */
+
+
+div.agendar.content {
+    max-width: 1200px;
+    background-color: var(--verdeForte);
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+div.agendar h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold; 
+    padding-top: 30px;
+}
+
+div.agendar button {
+    margin-top: 20px;
+    padding: 16px 35px;
+    margin: 40px 0px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: var(--pretoCinza);
+    background-color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+div.agendar button a {
+    text-decoration: none;
+    color: var(--pretoCinza);
+}
+
+div.agendar button:hover a {
+    color: var(--white);
+}
+
+div.agendar button:hover {
+    transition: 0.3s ease;
+    background-color: var(--verdeFraco);
+    color: var(--white);
+}
+
+
+/* Estilizando o rodapé */
+
+footer.content {
+    max-width: 1349px;
+    padding-top: 3.71%;
+    background-color: var(--cinzaFraco);
+    border-radius: 25px 25px 0px 0px;
+}
+footer div#rodape {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+footer div#rodape div.rodape-items {
+    width: 22.727272%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div#rodape div.rodape-items h4 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+footer div#rodape div.rodape-items ul {
+    list-style-type: none;
+    text-align: start;
+}
+
+footer div#rodape div.rodape-items ul li {
+    padding: 3px;
+}
+
+footer div#rodape div.rodape-items ul li a{
+    word-break: break-all;
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer div.icones ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+footer div.icones ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+footer div.icones ul li a {
+    text-align: center;
+    width: 100%;
+}
+
+footer div.icones ul li a i{
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+}

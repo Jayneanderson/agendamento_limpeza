@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Limpa +</title>
 
 </head>
@@ -15,33 +15,62 @@
         <div class="content">
             <nav>
                 <div>
-                    <a>Limpa+</a><!-- Este deve ficar no início -->
+                    <a href="index.html">LogoLimpa+</a><!-- Este deve ficar no início -->
                 </div>
                 <ul>
                     <li><a>Tutorial</a></li>
-                    <li><a>Entrar</a></li>
+                    <li><a href="login.html">Entrar</a></li>
                     <li><a>Ajuda</a></li>
-                    <li><a>Contratar</a></li>
+                    <li><a href="agendar.html">Contratar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Seção de apresentação -->
-    <section class="banner">
-        <div class="descricao">
-            <div>
-                <h1>Limpeza de vegetação em Cachoeira-Ba (coloque uma imagem de fundo aqui)</h1>
-                <h2>Seu imóvel limpo e bonito</h2>
+    <section class="banner_dicas content">
+        <div class="banner">
+            <div class="descricao">
+                <i class="fas fa-2x fa-arrow-left"></i>
+                <i class="fas fa-2x fa-arrow-right"></i>
+                <!-- <div>
+                    <h1>Limpeza de vegetação em Cachoeira-Ba (coloque uma imagem de fundo aqui)</h1>
+                    <h2>Seu imóvel limpo e bonito</h2>
+                </div>
+                <div class="button">
+                    <button>Simular</button>
+                </div> -->
             </div>
-            <div class="button">
-                <button>Simular</button>
-            </div>
+        </div><!-- fim banner -->
+        <div class="dicas borda_generica">
+            <h3>Dicas para você</h3>
+            <ul>
+                <li class="">
+                    <h5>Platação</h5>
+                    <span>O que fazer antes de plantar? →</span>
+                </li>
+                <li>
+                    <h5>Platação</h5>
+                    <span>O que fazer antes de plantar? →</span>
+                </li>
+                <li>
+                    <h5>Platação</h5>
+                    <span>O que fazer antes de plantar? →</span>
+                </li>
+                <li>
+                    <h5>Platação</h5>
+                    <span>O que fazer antes de plantar? →</span>
+                </li>
+                <li>
+                    <h5>Platação</h5>
+                    <span>O que fazer antes de plantar? →</span>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- Seção de motivos -->
-    <div class="motivation content">
+    <div class="motivation content borda_generica">
         <h1>Por que utilizar o Limpa+?</h1>
         <div class="itens-motivations">
             <ul>
@@ -56,7 +85,7 @@
                 </li>
                 
                 <li>
-                    <img src="images/chat.svg" alt="smartphone">
+                    <img src="images/smartphone_chat.svg" alt="smartphone">
                    <span>Desconto no primeiro agendamento</span>
                 </li>
             </ul>
@@ -66,18 +95,36 @@
 
     <!-- preços -->
 
-    <div class="prices content">
-        <h1>Veja nosso preços</h1>
+    <div class="prices content borda_generica">
+        <h1>Veja nossos preços</h1>
         <section>
             <ul>
                 <li>
                     <h3>Tipo de serviço</h3>
                     <div class="price">
                         <span>R$</span>
-                        <h3>80</h3>
+                        <h3>50</h3>
                     </div>
                     <button>Agendar</button>
-                    <span><a href="">Inclui</a></span>
+                    <span><a href="agendar.html">Inclui</a></span>
+                </li>
+                <li>
+                    <h3>Tipo de serviço</h3>
+                    <div class="price">
+                        <span>R$</span>
+                        <h3>60</h3>
+                    </div>
+                    <button>Agendar</button>
+                    <span><a href="agendar.html">Inclui</a></span>
+                </li>
+                <li>
+                    <h3>Tipo de serviço</h3>
+                    <div class="price">
+                        <span>R$</span>
+                        <h3>70</h3>
+                    </div>
+                    <button>Agendar</button>
+                    <span><a href="agendar.html">Inclui</a></span>
                 </li>
                 <li>
                     <h3>Tipo de serviço</h3>
@@ -86,64 +133,62 @@
                         <h3>80</h3>
                     </div>
                     <button>Agendar</button>
-                    <span><a href="">Inclui</a></span>
-                </li>
-                <li>
-                    <h3>Tipo de serviço</h3>
-                    <div class="price">
-                        <span>R$</span>
-                        <h3>80</h3>
-                    </div>
-                    <button>Agendar</button>
-                    <span><a href="">Inclui</a></span>
+                    <span><a href="agendar.html">Inclui</a></span>
                 </li>
             </ul>
         </section>
     </div>
     
-    <div class="agendar">
+    <div class="agendar content">
         <h1>Agende agora a sua limpeza</h1>
-        <button>Simular</button>
+        <button><a href="/agendar.html">Contratar</a></button>
     </div>
 
     <footer class="content">
         <div id="rodape">
             <div class="rodape-items">
                 <h4>Limpa+</h4>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
+                <ul>
+                    <li><a href="">Dica de Limpeza</a></li>   
+                </ul>
+           
             </div>
             <div class="rodape-items">
                 <h4>Ajuda</h4>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
+                <ul>
+                    <li><a href="">Dúvidas frequentes</a></li>  
+                    <li><a href="">Como funciona</a></li>  
+                    <li><a href="">Política de privacidade</a></li>  
+                    <li><a href="">Termos de uso</a></li>  
+                </ul>
             </div>
             <div class="rodape-items">
                 <h4>Atendimento</h4>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
-                <a href="">dadada</a>
+                <ul>
+                    <li><a href="">Segunda a sábado</a></li>  
+                    <li><a href="">(75) 983101948</a></li>  
+                    <li><a href="">limpamais@gmail.com</a></li>  
+                </ul>
             </div>
         </div>
         <div class="icones">
             <ul>
                 <li>
-                    <a href=""><img src="images/WhatsApp.svg" alt=""></a>
+                    <a href=""><i class="fab fa-lg fa-whatsapp"></i></a>
                 </li>
                 <li>
-                    <a href=""><img src="images/Instagram.svg" alt=""></a>
+                    <a href=""><i class="fab fa-lg fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href=""><img src="images/Facebook.svg" alt=""></a>
+                    <a href=""><i class="fab fa-lg fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href=""><img src="images/YouTube.svg" alt=""></a>
+                    <a href=""><i class="fab fa-lg fa-youtube"></i></a>
                 </li>
             </ul>
         </div>
     </footer>
 </body>
 
+<script src="https://kit.fontawesome.com/a14a784515.js" crossorigin="anonymous"></script>
 </html>
