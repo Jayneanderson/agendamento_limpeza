@@ -30,6 +30,18 @@ body {
     background-color: var(--pretoCinza);
 }
 
+/* body::-webkit-scrollbar {/* define a largura do scroll 
+    width: 0.50rem;
+}
+
+body::-webkit-scrollbar-track{/* regra para a cor do scroll completo 
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar-thumb{/* regra para o scroll rolando 
+    background-color: var(--paleBlue);
+} */
+
 /* estilizando o header */
 header {
     max-width: 1100;
@@ -42,9 +54,9 @@ header {
 }
 
 .content {
-    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    padding: 0px 20px;
 }
 
 header nav {
@@ -61,12 +73,10 @@ header nav ul {
 }
 
 header nav ul li {/* dando tamanho aos lis do nav */
-    padding: 7px;
     margin-right: 10px;
-    border-radius: 5px;
 }
 
-header nav ul li:hover { /* color ao passar o mouse e mostrando ponteiro */
+header nav ul li a:hover { /* color ao passar o mouse e mostrando ponteiro */
     transition: 0.3s ease;
     background-color: var(--white);
     cursor: pointer;
@@ -81,13 +91,13 @@ header nav ul li:hover a {
     color: var(--pretoCinza);
 }
 
-header nav ul li:last-child{ /* trabalhando com o itemcontratar */
+header nav ul li:last-child a{ /* trabalhando com o itemcontratar */
     background-color: var(--white);
     /* background-color: #04D361;  Guarde esta cor*/
 }
-header nav ul li:last-child:hover{ /* trabalhando com o itemcontratar */
+header nav ul li:last-child:hover a{ /* trabalhando com o itemcontratar */
     background-color: var(--verdeFraco);
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     
 }
 
@@ -97,7 +107,8 @@ header nav ul li:last-child:hover a {
 
 header nav a, nav ul li a{
     text-decoration: none;
-    color: var(--white);
+    padding: 9px;
+    border-radius: 5px;
 }
 header nav a, nav ul li:last-child a{
     color: var(--pretoCinza);
@@ -109,6 +120,7 @@ section.banner_dicas {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    
 }
 /* Estilizando o banner */
 
@@ -171,6 +183,29 @@ section div.banner div button:hover{
 
 /* estilizando dicas */
 
+/*body::-webkit-scrollbar-track{ regra para a cor do scroll completo 
+    background-color: var(--white);
+}
+
+body::-webkit-scrollbar-thumb{/* regra para o scroll rolando 
+    background-color: var(--paleBlue);
+} */
+
+section.banner_dicas div.dicas::-webkit-scrollbar { /* define a largura do scroll */ 
+    width: 0.50rem;
+}
+
+section.banner_dicas div.dicas::-webkit-scrollbar-track {
+    margin: 30px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section.banner_dicas div.dicas::-webkit-scrollbar-thumb {
+    background-color: var(--verdeForte);
+    border-radius: 5px;
+}
+
 section.banner_dicas div.dicas {
     width: 25%;
     height: 380px;
@@ -214,8 +249,7 @@ div.motivation {
     border-radius: 20px;
 }
 
-div.motivation.content {
-    max-width: 1200px;
+div.motivation .content {
 }
 
 div.motivation h1 {

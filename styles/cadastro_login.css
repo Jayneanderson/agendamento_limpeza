@@ -43,6 +43,11 @@ main {
     width: 100%;
 }
 
+main {
+    padding-bottom: 20px;
+    
+}
+
 main div.login {
     width: 300px;
     height: 573px;
@@ -65,6 +70,15 @@ main div.login div.logo {
 main div.login div.logo h3 {
     color: var(--pretoCinza);
 }
+/* h3 e texto de criar conta */
+main div.login div.criar-conta {
+    text-align: center;
+    margin: 17px 0px;
+}
+
+main div.login div.criar-conta h3 {
+    margin-bottom: 5px;
+}
 
 main div.login span {
     margin-top: 3px;
@@ -76,6 +90,12 @@ main div.login span {
 main div.login div.login-date {
     width: 100%;
     height: 70px;
+    margin-top: 5px;
+}
+
+main div.login div.login-date#senha {
+    width: 100%;
+    height: 50px;
     margin-top: 5px;
 }
 
